@@ -6,7 +6,7 @@ var cors_proxy = require("cors-anywhere");
 cors_proxy
   .createServer({
     originWhitelist: [], // Allow all origins
-    requireHeader: ["origin", "x-requested-with"],
+    requireHeader: [],
     removeHeaders: ["cookie", "cookie2"],
   })
   .listen(port, host, function () {
